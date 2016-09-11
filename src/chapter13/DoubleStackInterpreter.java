@@ -7,7 +7,7 @@ import java.util.Stack;
  * Date: 9/11/16
  * Author: qinjiangbo@github.io
  */
-public class Algorithm134 {
+public class DoubleStackInterpreter {
 
     private static Stack<String> ops = new Stack<String>();
     private static Stack<Double> vals = new Stack<Double>();
