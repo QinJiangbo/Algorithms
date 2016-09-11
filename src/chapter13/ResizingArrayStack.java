@@ -8,6 +8,26 @@ import java.util.Iterator;
  */
 public class ResizingArrayStack<Item> implements Iterable<Item> {
 
+    private Item[] a = (Item[]) new Object[1];
+    private int N = 0;
+
+    public int size() {
+        return N;
+    }
+
+    public boolean isEmpty() {
+        return N == 0;
+    }
+
+    public Item push(Item item) {
+        a[N++] = item;
+        return item;
+    }
+
+    public Item pop() {
+        return a[--N];
+    }
+
     @Override
     public Iterator<Item> iterator() {
         return null;
