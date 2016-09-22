@@ -6,7 +6,7 @@ package chapter11;
 public class Question1114 {
 
     public static void main(String[] args) {
-        System.out.println(lg(32));
+        System.out.println(lg(33));
     }
 
     public static int lg(int N) {
