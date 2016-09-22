@@ -23,4 +23,10 @@ public class ResizingArrayStackTest {
         arrayStack.push("pear");
         System.out.println(arrayStack.size());
     }
+
+    @Test
+    public void testPop() {
+        testPush();
+        System.out.println(arrayStack.pop());
+    }
 }
