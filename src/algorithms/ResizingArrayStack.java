@@ -63,7 +63,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
 
     @Override
     public Iterator<Item> iterator() {
-        return null;
+        return new ReverseArrayIterator();
     }
 
     /**
@@ -71,14 +71,16 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
      */
     private class ReverseArrayIterator implements Iterator<Item> {
 
+        private int i = N;
+
         @Override
         public boolean hasNext() {
-            return false;
+            return i > 0;
         }
 
         @Override
         public Item next() {
-            return null;
+            return a[--i];
         }
     }
 }
