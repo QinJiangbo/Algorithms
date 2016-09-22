@@ -70,7 +70,6 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
      * 内部迭代器实现,是一个倒序迭代器,因为栈是LIFO结构
      */
     private class ReverseArrayIterator implements Iterator<Item> {
-
         private int i = N;
 
         @Override
