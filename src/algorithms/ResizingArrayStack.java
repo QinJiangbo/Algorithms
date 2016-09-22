@@ -35,7 +35,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
     public Item push(Item item) {
         a[N++] = item;
         if (N == a.length) {
-            resize(2 * a.length);
+            resize(2 * a.length); // 当数组用完的时候扩容为原来两倍
         }
         return item;
     }
@@ -47,7 +47,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
     public Item pop() {
         Item item = a[--N];
         a[N] = null;
-        if (N > 0 && N == a.length / 4) {
+        if (N > 0 && N == a.length / 4) { // 当数组使用量为原来的1/4的时候减容1/2
             resize(a.length / 2);
         }
         return item;
