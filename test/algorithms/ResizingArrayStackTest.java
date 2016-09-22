@@ -20,6 +20,7 @@ public class ResizingArrayStackTest {
     public void testPush() {
         arrayStack.push("apple");
         arrayStack.push("banana");
+        arrayStack.push("pear");
         System.out.println(arrayStack.size());
     }
 }
