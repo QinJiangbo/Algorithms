@@ -29,4 +29,5 @@ public class ResizingArrayStackTest {
         testPush();
         System.out.println(arrayStack.pop());
     }
+
 }
