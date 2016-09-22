@@ -33,10 +33,10 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
      * @return
      */
     public Item push(Item item) {
-        a[N++] = item;
         if (N == a.length) {
             resize(2 * a.length); // 当数组用完的时候扩容为原来两倍
         }
+        a[N++] = item;
         return item;
     }
 
@@ -53,12 +53,18 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
         return item;
     }
 
+    /**
+     * 动态调整栈的大小
+     *
+     * @param capacity
+     */
     private void resize(int capacity) {
         Item[] arr = (Item[]) new Object[capacity];
         int length = a.length;
         for (int i = 0; i < length; i++) {
             arr[i] = a[i];
         }
+        a = arr;
     }
 
     @Override
