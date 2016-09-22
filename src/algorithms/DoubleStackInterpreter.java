@@ -1,4 +1,4 @@
-package chapter13;
+package algorithms;
 
 import java.util.Stack;
 
