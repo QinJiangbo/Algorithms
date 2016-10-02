@@ -14,4 +14,10 @@ public class SelectSorting {
     public static void sort(int[] a) {
 
     }
+
+    public static void swap(int i, int j, int[] a) {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
 }
