@@ -5,4 +5,13 @@ package algorithms;
  * Author: qinjiangbo@github.io
  */
 public class InsertSorting {
+
+    /**
+     * Sort the array with Insert Sorting method
+     *
+     * @param a
+     */
+    public static void sort(int[] a) {
+
+    }
 }
