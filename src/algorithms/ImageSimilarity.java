@@ -16,10 +16,10 @@ public class ImageSimilarity {
     // 全流程
     public static void main(String[] args) throws IOException {
         // 获取图像
-        File imageFile1 = new File("/Users/Richard/Desktop/Image03.png");
-        File imageFile2 = new File("/Users/Richard/Desktop/Image04.png");
+        File imageFile1 = new File("/Users/Richard/Desktop/Image01.png");
+        File imageFile2 = new File("/Users/Richard/Desktop/Image02.png");
         Image image1 = ImageIO.read(imageFile1);
-        Image image2 = ImageIO.read(imageFile1);
+        Image image2 = ImageIO.read(imageFile2);
         int[] pixels1 = processImage(image1);
         int[] pixels2 = processImage(image2);
         // 获取两个图的汉明距离（假设另一个图也已经按上面步骤得到灰度比较数组）
