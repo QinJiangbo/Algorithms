@@ -1,5 +1,8 @@
 package algorithms;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Date: 19/11/2016
  * Author: qinjiangbo@github.io
@@ -14,6 +17,9 @@ public class GenericArray<T> {
     public static void main(String[] args) {
         GenericArray<Integer> genericArray = new GenericArray<>(10);
         Object[] objects = genericArray.rep();
+        Fruit[] fruits = new Apple[10];
+        List<Apple> fruitList = new ArrayList<>();
+        fruitList.add(new Apple());
     }
 
     public void put(int index, T item) {
@@ -28,5 +34,13 @@ public class GenericArray<T> {
         System.out.println(array.getClass().getSimpleName());
         return array;
     }
+
+}
+
+class Fruit {
+
+}
+
+class Apple extends Fruit {
 
 }
