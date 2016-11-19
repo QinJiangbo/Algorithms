@@ -18,8 +18,10 @@ public class GenericArray<T> {
         GenericArray<Integer> genericArray = new GenericArray<>(10);
         Object[] objects = genericArray.rep();
         Fruit[] fruits = new Apple[10];
-        List<Apple> fruitList = new ArrayList<>();
+        List<? super Apple> fruitList = new ArrayList<>();
+//      List<? extends Apple> fruitList = new ArrayList<>();
         fruitList.add(new Apple());
+        fruitList.add(new Jonathan());
     }
 
     public void put(int index, T item) {
@@ -42,5 +44,9 @@ class Fruit {
 }
 
 class Apple extends Fruit {
+
+}
+
+class Jonathan extends Apple {
 
 }
