@@ -1,4 +1,4 @@
-package chapter11;
+package execises;
 
 import java.util.Random;
 
