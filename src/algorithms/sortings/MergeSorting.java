@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.sortings;
 
 /**
  * Date: 03/10/2016

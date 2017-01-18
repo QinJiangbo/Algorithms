@@ -1,13 +1,13 @@
-package algorithms;
+package algorithms.sortings;
 
 /**
  * Date: 02/10/2016
  * Author: qinjiangbo@github.io
  */
-public class SelectSorting {
+public class InsertSorting {
 
     /**
-     * Sort the array with selective sorting method
+     * Sort the array with Insert Sorting method
      *
      * @param a
      */
