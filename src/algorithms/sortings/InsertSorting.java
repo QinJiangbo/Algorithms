@@ -15,9 +15,5 @@ public class InsertSorting {
 
     }
 
-    public static void swap(int i, int j, int[] a) {
-        int temp = a[i];
-        a[i] = a[j];
-        a[j] = temp;
-    }
+
 }
