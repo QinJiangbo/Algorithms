@@ -4,15 +4,10 @@ package algorithms.sortings;
  * Date: 03/10/2016
  * Author: qinjiangbo@github.io
  */
-public class MergeSorting {
+public class MergeSorting extends BaseSorting {
 
-    /**
-     * 交换元素
-     */
-    public static void swap(int i, int j, int[] a) {
-        int temp = a[i];
-        a[i] = a[j];
-        a[j] = temp;
+    @Override
+    public void sort(int[] a) {
+
     }
-
 }
