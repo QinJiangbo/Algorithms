@@ -8,7 +8,9 @@ public class InsertSorting extends BaseSorting {
 
     @Override
     public void sort(int[] a) {
+        for (int i = 0; i < a.length; i++) {
 
+        }
     }
 
 }
