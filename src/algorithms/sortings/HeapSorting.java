@@ -10,4 +10,23 @@ public class HeapSorting extends BaseSorting {
     public void sort(int[] a) {
 
     }
+
+    /**
+     * sink the element to the bottom
+     *
+     * @param k
+     */
+    private void sink(int k) {
+
+    }
+
+    /**
+     * swim the element to the top
+     *
+     * @param k
+     */
+    private void swim(int k) {
+
+    }
+
 }
