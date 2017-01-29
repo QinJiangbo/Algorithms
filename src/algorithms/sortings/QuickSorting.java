@@ -14,11 +14,11 @@ public class QuickSorting extends BaseSorting {
     /**
      * partition the array elements
      *
-     * @param k
+     * @param a array
      * @param hi
      * @param lo
      */
-    private void partition(int k, int lo, int hi) {
+    private void partition(int[] a, int lo, int hi) {
 
     }
 }
