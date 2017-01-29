@@ -6,9 +6,10 @@ package algorithms.sortings;
  */
 public class QuickSorting extends BaseSorting {
 
-    @Override
-    public void sort(int[] a) {
-
+    public void sort(int[] a, int lo, int hi) {
+        int k = partition(a, lo, hi);
+        sort(a, lo, k - 1);
+        sort(a, k + 1, hi);
     }
 
     /**
@@ -32,5 +33,11 @@ public class QuickSorting extends BaseSorting {
         }
         swap(lo, j, a);
         return j;
+    }
+
+    @Override
+    public void sort(int[] a) {
+        int lo = 0, hi = a.length;
+        sort(a, lo, hi);
     }
 }
