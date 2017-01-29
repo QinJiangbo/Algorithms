@@ -1,10 +1,18 @@
 package algorithms.sortings;
 
+import java.util.Arrays;
+
 /**
  * @date: 21/01/2017 11:15 PM
  * @author: qinjiangbo@github.io
  */
 public class QuickSorting extends BaseSorting {
+
+    public static void main(String[] args) {
+        int[] a = {11, 4, 6, 3, 9, 4, 13, 18};
+        new QuickSorting().sort(a);
+        System.out.println(Arrays.asList(a));
+    }
 
     public void sort(int[] a, int lo, int hi) {
         int k = partition(a, lo, hi);
