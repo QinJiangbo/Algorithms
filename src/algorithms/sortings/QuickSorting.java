@@ -18,8 +18,19 @@ public class QuickSorting extends BaseSorting {
      * @param hi
      * @param lo
      */
-    private void partition(int[] a, int lo, int hi) {
+    private int partition(int[] a, int lo, int hi) {
         int k = a[lo]; // flag
-
+        int i = lo + 1, j = hi;
+        while (i <= j) {
+            while (a[i] <= a[k]) {
+                i++;
+            }
+            while (a[j] >= a[k]) {
+                j--;
+            }
+            swap(i, j, a);
+        }
+        swap(lo, j, a);
+        return j;
     }
 }
