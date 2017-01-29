@@ -19,6 +19,7 @@ public class QuickSorting extends BaseSorting {
      * @param lo
      */
     private void partition(int[] a, int lo, int hi) {
+        int k = a[lo]; // flag
 
     }
 }
