@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class QuickSorting extends BaseSorting {
 
     public static void main(String[] args) {
-        int[] a = {11, 4, 6, 3, 19, 4, 13, 18};
+        int[] a = {11, 4, 6, 3, 9, 4, 13, 18};
         new QuickSorting().sort(a);
         System.out.println(Arrays.toString(a));
     }
