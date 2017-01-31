@@ -31,15 +31,9 @@ public class QuickSorting extends BaseSorting {
         int k = a[lo]; // guard
         int i = lo + 1, j = hi;
         while (i <= j) {
-            while (a[i] <= k) {
-                i++;
-            }
-            while (a[j] >= k) {
-                j--;
-            }
-            if (i > j) {
-                break;
-            }
+            while (a[i] <= k) { i++; }
+            while (a[j] >= k) { j--; }
+            if (i > j) { break; }
             swap(i, j, a);
         }
         swap(lo, j, a);
