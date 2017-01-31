@@ -1,5 +1,6 @@
 package algorithms;
 
+import algorithms.lists.ListQueue;
 import org.junit.Test;
 
 import java.util.Iterator;

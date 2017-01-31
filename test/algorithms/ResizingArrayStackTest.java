@@ -1,5 +1,6 @@
 package algorithms;
 
+import algorithms.lists.ResizingArrayStack;
 import org.junit.Before;
 import org.junit.Test;
 
