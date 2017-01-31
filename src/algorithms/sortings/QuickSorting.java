@@ -11,10 +11,11 @@ public class QuickSorting extends BaseSorting {
     public static void main(String[] args) {
         int[] a = {11, 4, 6, 3, 19, 4, 13, 18};
         new QuickSorting().sort(a);
-        System.out.println(Arrays.asList(a));
+        System.out.println(Arrays.toString(a));
     }
 
     public void sort(int[] a, int lo, int hi) {
+        if (hi <= lo) return;
         int k = partition(a, lo, hi);
         sort(a, lo, k - 1);
         sort(a, k + 1, hi);
@@ -31,8 +32,8 @@ public class QuickSorting extends BaseSorting {
         int v = a[lo]; // guard
         int i = lo, j = hi;
         while (i < j) {
-            while (a[i] <= v) { i++; }
-            while (a[j] >= v) { j--; }
+            while (a[i] <= v) { i++; if (i == hi) break; }
+            while (a[j] >= v) { j--; if (j == lo) break; }
             if (i >= j) { break; }
             swap(i, j, a);
         }
