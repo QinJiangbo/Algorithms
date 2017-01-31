@@ -28,11 +28,11 @@ public class QuickSorting extends BaseSorting {
      * @param lo
      */
     private int partition(int[] a, int lo, int hi) {
-        int k = a[lo]; // guard
-        int i = lo + 1, j = hi;
-        while (i <= j) {
-            while (a[i] <= k) { i++; }
-            while (a[j] >= k) { j--; }
+        int v = a[lo]; // guard
+        int i = lo, j = hi;
+        while (i < j) {
+            while (a[i] <= v) { i++; }
+            while (a[j] >= v) { j--; }
             if (i >= j) { break; }
             swap(i, j, a);
         }
