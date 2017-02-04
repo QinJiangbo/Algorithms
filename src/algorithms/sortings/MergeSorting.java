@@ -6,6 +6,8 @@ package algorithms.sortings;
  */
 public class MergeSorting extends BaseSorting {
 
+    private static int[] aux;
+
     @Override
     public void sort(int[] a) {
 
@@ -18,7 +20,10 @@ public class MergeSorting extends BaseSorting {
      * @param lo low index
      * @param hi high index
      */
-    private void merge(int[] a, int lo, int hi) {
+    private void merge(int[] a, int lo, int mid, int hi) {
+        int i = lo, j = mid + 1;
+        for (int k = lo; k <= hi; k++) {
 
+        }
     }
 }
