@@ -1,5 +1,7 @@
 package algorithms.sortings;
 
+import java.util.Arrays;
+
 /**
  * Date: 03/10/2016
  * Author: qinjiangbo@github.io
@@ -8,9 +10,30 @@ public class MergeSorting extends BaseSorting {
 
     private int[] aux;
 
+    public static void main(String[] args) {
+        int[] a = {11, 4, 6, 3, 9, 4, 13, 18};
+        new MergeSorting().sort(a);
+        System.out.println(Arrays.toString(a));
+    }
+
     @Override
     public void sort(int[] a) {
+        aux = new int[a.length];
+        sort(a, 0, a.length-1);
+    }
 
+    /**
+     * sorting method
+     * @param a
+     * @param lo
+     * @param hi
+     */
+    private void sort(int[] a, int lo, int hi) {
+        if (hi <= lo) return;
+        int mid = lo + (hi - lo) / 2;
+        sort(a, lo, mid);
+        sort(a, mid+1, hi);
+        merge(a, lo, mid, hi);
     }
 
     /**
