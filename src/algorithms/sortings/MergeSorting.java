@@ -6,7 +6,7 @@ package algorithms.sortings;
  */
 public class MergeSorting extends BaseSorting {
 
-    private static int[] aux;
+    private int[] aux;
 
     @Override
     public void sort(int[] a) {
