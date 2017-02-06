@@ -10,4 +10,15 @@ public class Quick3Way extends BaseSorting {
     public void sort(int[] a) {
 
     }
+
+    /**
+     * partition the array
+     * @param a
+     * @param lo
+     * @param hi
+     * @return
+     */
+    private int partition(int[] a, int lo, int hi) {
+        return 0;
+    }
 }
