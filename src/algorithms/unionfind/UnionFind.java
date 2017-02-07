@@ -5,4 +5,8 @@ package algorithms.unionfind;
  * @author: qinjiangbo@github.io
  */
 public class UnionFind {
+
+    public boolean connected() {
+        return false;
+    }
 }
