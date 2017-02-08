@@ -9,4 +9,7 @@ public class UnionFind {
     public boolean connected() {
         return false;
     }
+
+    public UnionFind() {}
+
 }
