@@ -6,8 +6,6 @@ package algorithms.unionfind;
  */
 public class UF {
 
-    private int count = 0;
-
     /**
      * initialize N sites with integer names (0 to N-1)
      * @param n
@@ -49,7 +47,7 @@ public class UF {
      * @return
      */
     public int count() {
-        return count;
+        return 0;
     }
 
 }
