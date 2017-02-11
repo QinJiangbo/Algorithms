@@ -6,12 +6,19 @@ package algorithms.unionfind;
  */
 public class UF {
 
+    private int count; // number of components
+    private int[] id; // access to component id (site indexed)
+
     /**
      * initialize N sites with integer names (0 to N-1)
      * @param n
      */
-    public UF(int n) {
-
+    public UF(int N) {
+        count = N;
+        id = new int[N];
+        for (int i = 0; i < N; i++) {
+            id[i] = i;
+        }
     }
 
     /**
