@@ -54,7 +54,7 @@ public class UF {
      * @return
      */
     public int count() {
-        return 0;
+        return count;
     }
 
 }
