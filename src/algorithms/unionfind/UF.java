@@ -11,7 +11,7 @@ public class UF {
 
     /**
      * initialize N sites with integer names (0 to N-1)
-     * @param n
+     * @param N
      */
     public UF(int N) {
         count = N;
