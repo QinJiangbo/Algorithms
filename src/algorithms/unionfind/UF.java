@@ -40,7 +40,7 @@ public class UF {
         int pID = find(p);
         int qID = find(q);
         if (pID == qID) return;
-        for (int i = 0; i<id.length; i++) {
+        for (int i = 0; i < id.length; i++) {
             if (id[i] == pID) {
                 id[i] = qID;
             }
