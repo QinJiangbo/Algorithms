@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.general;
 
 /**
  * Date: 29/09/2016

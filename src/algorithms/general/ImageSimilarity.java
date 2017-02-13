@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.general;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

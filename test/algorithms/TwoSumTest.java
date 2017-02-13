@@ -1,5 +1,6 @@
 package algorithms;
 
+import algorithms.general.TwoSum;
 import org.junit.Test;
 
 /**

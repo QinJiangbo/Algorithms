@@ -1,5 +1,6 @@
 package algorithms;
 
+import algorithms.general.ThreeSum;
 import org.junit.Test;
 
 /**
