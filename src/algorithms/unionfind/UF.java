@@ -1,5 +1,9 @@
 package algorithms.unionfind;
 
+import algorithms.general.AlgsData;
+
+import java.io.*;
+
 /**
  * @date: 20/01/2017 8:23 PM
  * @author: qinjiangbo@github.io
@@ -65,8 +69,13 @@ public class UF {
         return count;
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        try {
+            FileReader input = AlgsData.input("tinyUF.txt");
+            BufferedReader bufferedReader = new BufferedReader(input);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
 }
