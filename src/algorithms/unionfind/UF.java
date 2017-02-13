@@ -28,7 +28,7 @@ public class UF {
      * @return
      */
     public boolean connected(int p, int q) {
-        return false;
+        return find(p) == find(q);
     }
 
     /**
@@ -37,7 +37,15 @@ public class UF {
      * @param q
      */
     public void union(int p, int q) {
-
+        int pID = find(p);
+        int qID = find(q);
+        if (pID == qID) return;
+        for (int i = 0; i<id.length; i++) {
+            if (id[i] == pID) {
+                id[i] = qID;
+            }
+        }
+        count--;
     }
 
     /**
@@ -46,7 +54,7 @@ public class UF {
      * @return
      */
     public int find(int p) {
-        return 0;
+        return id[p];
     }
 
     /**
