@@ -1,5 +1,7 @@
 package algorithms.general;
 
+import edu.princeton.cs.algs4.In;
+
 import java.io.*;
 
 /**
@@ -15,11 +17,10 @@ public class AlgsData {
      * read data into stream
      * @param fileName
      * @return
-     * @throws FileNotFoundException
      */
-    public static FileReader input(String fileName) throws FileNotFoundException {
+    public static In in(String fileName) {
         String filePath = DATA + fileName;
-        return new FileReader(new File(filePath));
+        return new In(new File(filePath));
     }
 
 }

@@ -1,6 +1,8 @@
 package algorithms.unionfind;
 
 import algorithms.general.AlgsData;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
 
 import java.io.*;
 
@@ -70,12 +72,9 @@ public class UF {
     }
 
     public static void main(String[] args) throws IOException {
-        try {
-            FileReader input = AlgsData.input("tinyUF.txt");
-            BufferedReader bufferedReader = new BufferedReader(input);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        In in = AlgsData.in("tinyUF.txt");
+        int N = in.readInt();
+        System.out.println(N);
     }
 
 }
