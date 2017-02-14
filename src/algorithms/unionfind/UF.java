@@ -82,6 +82,7 @@ public class UF {
             uf.union(p, q);
             StdOut.println(p + "  " + q);
         }
+        StdOut.println(uf.count() + " components");
     }
 
 }
