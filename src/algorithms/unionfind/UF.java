@@ -2,6 +2,7 @@ package algorithms.unionfind;
 
 import algorithms.general.AlgsData;
 import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.Out;
 import edu.princeton.cs.algs4.StdIn;
 
 import java.io.*;
@@ -39,8 +40,6 @@ public class UF {
 
     /**
      * add connection between p and q
-     * @param p
-     * @param q
      */
     public void union(int p, int q) {
         int pID = find(p);
@@ -74,7 +73,14 @@ public class UF {
     public static void main(String[] args) throws IOException {
         In in = AlgsData.in("tinyUF.txt");
         int N = in.readInt();
-        System.out.println(N);
+        UF uf = new UF(N);
+        while (!in.isEmpty()) {
+            int p = in.readInt();
+            int q = in.readInt();
+            if (uf.connected(p, q)) continue;
+            uf.union(p, q);
+            new Out().println(p + "  " + q);
+        }
     }
 
 }
