@@ -4,6 +4,7 @@ import algorithms.general.AlgsData;
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.Out;
 import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 import java.io.*;
 
@@ -79,7 +80,7 @@ public class UF {
             int q = in.readInt();
             if (uf.connected(p, q)) continue;
             uf.union(p, q);
-            new Out().println(p + "  " + q);
+            StdOut.println(p + "  " + q);
         }
     }
 
