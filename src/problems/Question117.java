@@ -1,4 +1,4 @@
-package execises;
+package problems;
 
 /**
  * Created by Richard on 6/30/16.

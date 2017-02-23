@@ -1,4 +1,4 @@
-package execises;
+package problems;
 
 import java.util.Random;
 
