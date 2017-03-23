@@ -69,11 +69,13 @@ public class BinaryTree {
         Stack<Node> stack = new Stack<>();
         Stack<Node> temp = new Stack<>();
         while (p != null || !stack.empty()) {
+            // 先看右子树
             while (p != null) {
                 temp.push(p);
                 stack.push(p);
                 p = p.getRight();
             }
+            // 再看左子树
             if (!stack.empty()) {
                 p = stack.pop();
                 p = p.getLeft();
@@ -86,7 +88,7 @@ public class BinaryTree {
 
     public static void main(String[] args) {
         BinaryTree binaryTree = new BinaryTree(init());
-        iterativeInorder(binaryTree.getRoot());
+        iterativePostorder(binaryTree.getRoot());
     }
 
 }
