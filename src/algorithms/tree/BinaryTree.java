@@ -86,11 +86,6 @@ public class BinaryTree {
         }
     }
 
-    public static void main(String[] args) {
-        BinaryTree binaryTree = new BinaryTree(init());
-        iterativePostorder(binaryTree.getRoot());
-    }
-
 }
 
 class Node {
